@@ -1,3 +1,7 @@
-public class Rectangle implements Turtle {
+class Rectangle extends Shape {
     
+    
+
+
+
 }
