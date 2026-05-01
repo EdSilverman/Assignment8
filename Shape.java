@@ -15,15 +15,19 @@ public class Shape{
 
     public abstract double getArea();
 
-    public void setShapeColor(String color){
+    public abstract void draw(turtle t);
+
+    public abstract setShapeColor(String color){
         
     }
-
 
     public String getColor(){
         return color;
     }
 
+    public int getNumSides(){
+        return numSides
+    }
 
 
 
