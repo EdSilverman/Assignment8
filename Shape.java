@@ -17,7 +17,7 @@ public class Shape{
 
     public abstract setShapeColor(Turtle t, String color);
 
-    public abstract void draw(turtle t, String color);
+    public abstract void draw(Turtle t, String color);
 
     public String getColor(){
         return color;
