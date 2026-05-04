@@ -13,6 +13,8 @@ abstract class Shape{
     }
 
 
+    public abstract void setPosition();
+
     public abstract double getArea();
 
     public abstract void setShapeColor(Turtle t, String color);
