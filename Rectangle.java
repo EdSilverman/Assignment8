@@ -23,6 +23,7 @@ public class Rectangle extends Shape {
         t.fillColor(color);
     }
     
+    @Override
     public void setPosition(double x, double y) {
         t.setPosition(x,y);
     }
