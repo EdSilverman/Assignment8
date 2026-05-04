@@ -18,7 +18,7 @@ class Rectangle extends Shape {
         return length * width;
     }
 
-    @Override public void setShapeColor(String color){
+    @Override public void setShapeColor(Turtle t, String color){
 
         
         t.fillColor(color);
@@ -26,8 +26,8 @@ class Rectangle extends Shape {
 
 
     @Override
-    public void draw(String color){
-        setShapeColor(color);
+    public void draw(Turtle t, String color){
+        setShapeColor(t, color);
 
         for(int i = 0; i < 2; i++){
         t.forward(width);
@@ -41,7 +41,7 @@ class Rectangle extends Shape {
 
 public static void main( String[] args ){
 
-    Shape shape = new Shape();
+    
 
     Rectangle rectangle = Shape.new Rectangle(20,50, "red");
 
