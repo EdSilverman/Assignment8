@@ -1,5 +1,5 @@
 
-class Rectangle extends Shape {
+static class Rectangle extends Shape {
 
     private double length;
 
