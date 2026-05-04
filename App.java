@@ -3,7 +3,7 @@ public class App {
 
     Turtle t = new Turtle();
 
-    Rectangle rectangle = new Rectangle(5, 6, "red");
+    Rectangle rectangle = new Rectangle(50, 60, "red");
 
     rectangle.draw(t);
     }
