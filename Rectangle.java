@@ -27,7 +27,7 @@ class Rectangle extends Shape {
     @Override
     public void draw(Turtle t){
 
-        setShapeColor(t, this.getColor());
+       outlineColor(t, this.getColor());
 
         for(int i = 0; i < 2; i++){
         t.forward(width);
