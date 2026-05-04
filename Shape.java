@@ -1,4 +1,4 @@
-public class Shape{
+abstract class Shape{
     
     private String color;
     private int numSides;
@@ -15,15 +15,17 @@ public class Shape{
 
     public abstract double getArea();
 
-    public void setShapeColor(String color){
-        
-    }
+    public abstract void setShapeColor(Turtle t, String color);
 
+    public abstract void draw(Turtle t);
 
     public String getColor(){
         return color;
     }
 
+    public int getNumSides(){
+        return numSides;
+    }
 
 
 
