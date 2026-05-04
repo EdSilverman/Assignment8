@@ -3,6 +3,8 @@ abstract class Shape{
     private String color;
     private int numSides;
 
+    Turtle t = new Turtle();
+
     public Shape(){
 
     }
@@ -15,9 +17,9 @@ abstract class Shape{
 
     public abstract double getArea();
 
-    public abstract void setShapeColor(Turtle t, String color);
+    public abstract void setShapeColor(String color);
 
-    public abstract void draw(Turtle t, String color);
+    public abstract void draw(String color);
 
     public String getColor(){
         return color;
