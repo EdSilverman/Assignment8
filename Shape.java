@@ -12,14 +12,13 @@ abstract class Shape{
         this.numSides = numSides;
     }
 
-
-    public abstract void setPosition();
-
     public abstract double getArea();
 
     public abstract void setShapeColor(Turtle t, String color);
 
     public abstract void draw(Turtle t);
+
+    public abstract void draw(Turtle t, double x, double y);
 
     public String getColor(){
         return color;

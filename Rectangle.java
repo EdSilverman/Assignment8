@@ -23,10 +23,6 @@ public class Rectangle extends Shape {
         t.fillColor(color);
     }
     
-    @Override
-    public void setPosition(double x, double y) {
-        t.setPosition(x,y);
-    }
 
     @Override
     public void draw(Turtle t){
@@ -42,6 +38,22 @@ public class Rectangle extends Shape {
 
     }
 
+    @Override
+    public void draw(Turtle t, double x, double y){
+
+        t.up();
+        t.setPosition(x, y);
+        t.penColor(this.getColor());
+        t.down();
+
+        
+        for(int i = 0; i < 2; i++){
+        t.forward(width);
+        t.right(90);
+        t.forward(length);
+        t.right(90);
+        }
+    }
    
 }
 
