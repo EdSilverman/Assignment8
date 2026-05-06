@@ -8,8 +8,10 @@ public class App {
     
     Rectangle rectangle = new Rectangle(50, 60, "red");
 
+    Circle circle = new Circle(50, "blue");
+
     rectangle.draw(t, -30, 20);
-    rectangle.draw(t, -80, -40);
+    circle.draw(t, -80, -40);
     }
 
 }
