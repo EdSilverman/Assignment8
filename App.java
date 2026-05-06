@@ -7,11 +7,11 @@ public class App {
     Turtle t = new Turtle();
     
     Rectangle rectangle = new Rectangle(50, 60, "red");
-
     Circle circle = new Circle(25, "blue");
 
     rectangle.draw(t, -30, 20);
     circle.draw(t, -80, -40);
+    
     }
 
 }
