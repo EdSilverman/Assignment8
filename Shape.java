@@ -8,6 +8,11 @@ abstract class Shape{
     }
 
     public Shape(String color, int numSides){
+        
+        if(color == null || color.isEmpty()){
+            throw new IllegalArgumentException("The color cannot be empty or null")
+        }
+         
         this.color = color;
         this.numSides = numSides;
     }
@@ -27,6 +32,9 @@ abstract class Shape{
     public int getNumSides(){
         return numSides;
     }
+
+
+    
 
 
 
