@@ -10,7 +10,7 @@ abstract class Shape{
     public Shape(String color, int numSides){
         
         if(color == null || color.isEmpty()){
-            throw new IllegalArgumentException("The color cannot be empty or null")
+            throw new IllegalArgumentException("The color cannot be empty or null");
         }
          
         this.color = color;
@@ -19,7 +19,7 @@ abstract class Shape{
 
     public abstract double getArea();
 
-    public abstract void setShapeColor(Turtle t, String color);
+    public abstract void setShapeColor(Turtle t);
 
     public abstract void draw(Turtle t);
 

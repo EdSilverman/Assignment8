@@ -17,7 +17,7 @@ class Rectangle extends Shape {
     }
 
     @Override public void setShapeColor(Turtle t){
-        t.penColor(this.getColor())
+        t.penColor(this.getColor());
 
 
     }
@@ -56,7 +56,7 @@ class Rectangle extends Shape {
 
     @Override
     public String toString(){
-        return "Length: " + length + "Width: " + width + "Color: " + color;
+        return "Length: " + length + "Width: " + width + "Color: " + getColor();
     }
    
 
@@ -70,10 +70,10 @@ class Rectangle extends Shape {
             return true;
         }
 
-        if (other instanceof rectangle){
-            rectangle rect = (Rectangle) other;
+        if (other instanceof Rectangle){
+            Rectangle rect = (Rectangle) other;
             
-            return width.equals(rect.width) && length.equals(rect.length) &&  width == rect.width && length == rect.length;
+            return getColor().equals(rect.getColor()) && width == rect.width && length == rect.length;
             
         }
 

@@ -9,8 +9,7 @@ public class App {
     Rectangle rectangle = new Rectangle(50, 60, "red");
 
     rectangle.draw(t, -30, 20);
-    rectangle.draw(t);
-
+    rectangle.draw(t, -80, -40);
     }
 
 }
