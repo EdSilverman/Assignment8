@@ -44,6 +44,7 @@ class Circle extends Shape {
     public void draw(Turtle t, double x, double y) {
         t.up();
         t.setPosition(x, y);
+        t.penColor(this.getColor());
         t.down();
         
         draw(t);

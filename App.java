@@ -8,7 +8,7 @@ public class App {
     
     Rectangle rectangle = new Rectangle(50, 60, "red");
 
-    Circle circle = new Circle(50, "blue");
+    Circle circle = new Circle(25, "blue");
 
     rectangle.draw(t, -30, 20);
     circle.draw(t, -80, -40);
