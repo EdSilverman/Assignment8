@@ -13,19 +13,17 @@ A java project that demonstrates an inheritance hierarchy, using the Turtle clas
 
 # Project Structure
 
-'''
-Assignment8
-│
-├── .gitignore
-├── App.java
-├── Circle.java
-├── Pentagon.java
-├── README.md
-├── Rectangle.java
-├── Shape.java
-├── Triangle.java
-└── Turtle.java
-'''
+Assignment8  <br>
+│  <br>
+├── .gitignore  <br>
+├── App.java  <br>
+├── Circle.java  <br>
+├── Pentagon.java  <br>
+├── README.md  <br>
+├── Rectangle.java  <br>
+├── Shape.java  <br>
+├── Triangle.java  <br>
+└── Turtle.java  <br>
 
 # Turtle.java
 
