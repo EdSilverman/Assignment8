@@ -63,9 +63,9 @@ public void draw(Turtle t){
         }
 
         if (other instanceof Circle){
-            Circle rect = (Circle) other;
+            Circle circ = (Circle) other;
             
-            return getColor().equals(rect.getColor()) && radius == rect.radius;
+            return getColor().equals(circ.getColor()) && radius == circ.radius;
             
         }
 
