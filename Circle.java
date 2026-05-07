@@ -24,6 +24,7 @@ class Circle extends Shape {
         double circumference = 2 * Math.PI * radius;
         double sideLength = circumference / 365.0;
 
+        t.penColor(this.getColor());
         t.up();
         t.forward(radius);
         t.left(90);
