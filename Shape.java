@@ -11,7 +11,7 @@ abstract class Shape{
     private int numSides;
 
     /**
-     * creates a shape object
+     * creates a shape object throws exception if color is null or empty
      * @param color the color of the shape
      * @param numSides the number of sides of the shape
      */

@@ -23,19 +23,26 @@ class Rectangle extends Shape {
     }
 
 
-    
+    /**
+     * {@inheritcDoc}
+     */
     @Override
     public double getArea(){
         return length * width;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override public void setShapeColor(Turtle t, String color){
         t.penColor(color);
 
 
     }
     
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void draw(Turtle t){
 
@@ -50,6 +57,9 @@ class Rectangle extends Shape {
 
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void draw(Turtle t, double x, double y){
 
@@ -67,12 +77,19 @@ class Rectangle extends Shape {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     * @return a string containing all attributes
+    */
     @Override
     public String toString(){
-        return "Length: " + length + "Width: " + width + "Color: " + getColor();
+        return "Length: " + length + "Width: " + width + "Color: " + getColor() + "Sides:" + getNumSides();
     }
    
-
+    /**
+     * {@inheritDoc}
+     * @return returns true if this is equal to the other object or if its an instance of rectangle. False if null or not equal
+     */
     @Override
     public boolean equals(Object other){
         if (other == null){
@@ -91,8 +108,6 @@ class Rectangle extends Shape {
         }
 
         return false;
-
-
 
     }
 }
