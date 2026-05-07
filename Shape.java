@@ -1,5 +1,6 @@
 /**
  * models an abstract shape that can be given a number of sides and color
+ * @author Thomas Guzzetta
  */
 abstract class Shape{
     

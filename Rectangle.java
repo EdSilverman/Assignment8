@@ -1,6 +1,7 @@
 
 /**
  * models a rectangle shape using the turtle class. Allows the rectangle to have a length and width inherits from Shape class
+ * @author Thomas Guzzetta
  */
 class Rectangle extends Shape {
 
