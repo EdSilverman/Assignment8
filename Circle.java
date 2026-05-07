@@ -51,4 +51,26 @@ public void draw(Turtle t){
         draw(t);
         
     }
+
+      @Override
+    public boolean equals(Object other){
+        if (other == null){
+            return false;
+        }
+
+        if (other == this){
+            return true;
+        }
+
+        if (other instanceof Circle){
+            Circle rect = (Circle) other;
+            
+            return getColor().equals(rect.getColor()) && radius == rect.radius;
+            
+        }
+
+        return false;
+
+    }
+
 }
