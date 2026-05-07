@@ -12,6 +12,7 @@ A java project that demonstrates an inheritance hierarchy, using the Turtle clas
 4. <a href="#subclasses">Subclasses</a>
 5. <a href="#example-concepts-used">Example Concepts Used</a>
 6. <a href="#sample-output">Sample Output</a>
+7. <a href="#authors">Authors</a>
 
 
 # Project Structure
@@ -79,3 +80,12 @@ The documentation of the Turtle classes, used in this project are in the webpage
 
 
 # Sample Output
+
+
+
+# Authors
+
+**Edward Silverman**  <br>
+**Thomas Guzzetta**  <br>
+**Jorden Campbell**  <br>
+**Alyssa Sul**  <br>
