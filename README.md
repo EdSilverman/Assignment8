@@ -1,5 +1,6 @@
 # Assignment8
-**CSC 175 Group Project**
+**CSC 175 Group Project** 
+
 A java project that demonstrates an inheritance hierarchy, using the Turtle class provided in the GitHub repository. The inheritance hierarchy is shown using a base **Shapes** class and four subclasses. 
 
 
