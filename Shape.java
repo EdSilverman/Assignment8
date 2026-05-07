@@ -1,3 +1,6 @@
+/**
+ * models an abstract shape that can be given a number of sides and color
+ */
 abstract class Shape{
     
     /**

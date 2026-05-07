@@ -6,7 +6,7 @@ import java.util.Scanner;
 */
 public class App {
 
-    //Main is being used to test the stuff for now. Dont worry about implimenting a main function now. 
+    
     /**
      * Allows the simplification of creating a new rectangle object for the loops
      * @param scanner a new scanner object
@@ -31,7 +31,7 @@ public class App {
 
     /**
      * Allows the simplification of creating a new circle object for the loops
-     * @param scanner
+     * @param scanner a new scanner object
      * @return the new circle object
      */
     public static Circle circle(Scanner scanner ){
@@ -47,7 +47,21 @@ public class App {
 
     }
 
+    /**
+     * Allows the simplification of creating a new triangle object for the loops
+     * @param scanner a new scanner object
+     * @return the new triangle object
+     */
     public static Triangle triangle(Scanner scanner){
+
+    }
+
+    /**
+     * Allows the simplification of creating a new pentagon object for the loops
+     * @param scanner a new scanner object
+     * @return the new pentagon object
+     */
+    public static Pentagon pentagon(Scanner scanner){
 
     }
 
