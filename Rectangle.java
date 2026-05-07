@@ -1,16 +1,29 @@
 class Rectangle extends Shape {
 
+    /**
+     *the length of the rectangle 
+     */
     private double length;
 
+    /**
+     * the width of the rectangle 
+     */
     private double width;
 
-
+    /**
+     * creates a rectangle object with set width, length and color
+     * @param length the length of the rectangle
+     * @param width the width of the rectangle
+     * @param color the color of the rectangle
+     */
     public Rectangle(double length, double width, String color){
         super(color, 4);
         this.length = length;
         this.width = width;
     }
 
+
+    
     @Override
     public double getArea(){
         return length * width;
