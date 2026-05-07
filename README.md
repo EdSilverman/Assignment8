@@ -6,10 +6,12 @@ A java project that demonstrates an inheritance hierarchy, using the Turtle clas
 
 # Table of Contents
 
-1. <a href="# Project Structure">Project Structure</a>
-2. <a href="# Turtle.java">Turtle.java</a>
-3. <a href="# Base Class">Base Class</a>
-4. <a href="# Subclasses">Subclasses</a>
+1. <a href="#project-structure">Project Structure</a>
+2. <a href="#turtle.java">Turtle.java</a>
+3. <a href="#base-class">Base Class</a>
+4. <a href="#subclasses">Subclasses</a>
+5. <a href="#example-concepts-used">Example Concepts Used</a>
+6. <a href="#sample-output">Sample Output</a>
 
 
 # Project Structure
@@ -60,7 +62,6 @@ The documentation of the Turtle classes, used in this project are in the webpage
 ## Methode Overriding
 
 ```
-
  @Override
     public void draw(Turtle t){
 
@@ -77,3 +78,4 @@ The documentation of the Turtle classes, used in this project are in the webpage
 ```
 
 
+# Sample Output
