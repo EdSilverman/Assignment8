@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 /**
  * contains the utility methods that will be used to draw different shapes using implimentation of the turtle class
- */
+ * @author Thomas Guzzetta
+*/
 public class App {
 
     //Main is being used to test the stuff for now. Dont worry about implimenting a main function now. 
