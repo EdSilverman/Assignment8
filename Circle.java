@@ -14,8 +14,8 @@ class Circle extends Shape {
     }
 
     @Override 
-    public void setShapeColor(Turtle t){
-        t.penColor(this.getColor());
+    public void setShapeColor(Turtle t, String color){
+        t.penColor(color);
 
     }
 

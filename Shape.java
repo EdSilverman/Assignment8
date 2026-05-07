@@ -19,7 +19,7 @@ abstract class Shape{
 
     public abstract double getArea();
 
-    public abstract void setShapeColor(Turtle t);
+    public abstract void setShapeColor(Turtle t, String color);
 
     public abstract void draw(Turtle t);
 

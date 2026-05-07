@@ -11,7 +11,7 @@ public class App {
 
     rectangle.draw(t, -30, 20);
     circle.draw(t, -80, -40);
-    
+    rectangle.setShapeColor(t);
     }
 
 }

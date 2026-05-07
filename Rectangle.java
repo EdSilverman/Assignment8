@@ -16,8 +16,8 @@ class Rectangle extends Shape {
         return length * width;
     }
 
-    @Override public void setShapeColor(Turtle t){
-        t.penColor(this.getColor());
+    @Override public void setShapeColor(Turtle t, String color){
+        t.penColor(color);
 
 
     }
