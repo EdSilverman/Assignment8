@@ -11,6 +11,7 @@ A java project that demonstrates an inheritance hierarchy, using the Turtle clas
 3. <a href="# Base Class">Base Class</a>
 4. <a href="# Subclasses">Subclasses</a>
 
+
 # Project Structure
 
 Assignment8  <br>
@@ -25,17 +26,20 @@ Assignment8  <br>
 ├── Triangle.java  <br>
 └── Turtle.java  <br>
 
+
 # Turtle.java
 
 > This version is a modified version of the class based off of **Nick Seward's** Turtle class (all credit goes to them). 
 
 The documentation of the Turtle classes, used in this project are in the webpage attached the the activity **Turtle Class Documentation - README**. 
 
+
 # Base Class
 
 | Class | Description |
 | ----------- | ----------- |
 | Shape | Parent class containing shared shape attributes and methods |
+
 
 # Subclasses
 
@@ -45,5 +49,31 @@ The documentation of the Turtle classes, used in this project are in the webpage
 | Circle | Shape | Child class representing a standered circle |
 | Triangle | Shape | Child class representing a standered triangle|
 | Pentagon | Shape | Child class representing a standered pentagon |
+
+
+# Example Concepts Used
+
+## Inheritance
+
+`class Rectangle extends Shape {`
+
+## Methode Overriding
+
+```
+
+ @Override
+    public void draw(Turtle t){
+
+        t.penColor(this.getColor());
+
+        for(int i = 0; i < 2; i++){
+        t.forward(width);
+        t.right(90);
+        t.forward(length);
+        t.right(90);
+        }
+
+    }
+```
 
 
