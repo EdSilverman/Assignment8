@@ -9,7 +9,7 @@ class Pentagon extends Shape {
     private double sideLength;
     
     /**
-     * Creates a pentagon with a given side length and color
+     * Creates a pentagon with a side length and color
      * 
      * @param sideLength the length of each side
      * @param color the color of the pentagon
