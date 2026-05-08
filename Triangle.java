@@ -1,6 +1,6 @@
 /**
  * Models a triangle shape using the turtle class. Allows the triangle to have a side length and color inherits from Shape class
- * @author Your Name
+ * @author Jordan Campbell
  */
 public class Triangle extends Shape {
 
