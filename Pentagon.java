@@ -1,4 +1,5 @@
 /**
+ * Represents
  * 
  * @author Alyssa Sul
  */
@@ -8,9 +9,10 @@ class Pentagon extends Shape {
     private double sideLength;
     
     /**
+     * Creates a pentagon with a given side length and color
      * 
-     * @param sideLength
-     * @param color
+     * @param sideLength the length of each side
+     * @param color the color of the pentagon
      */
     public Pentagon(double sideLength, String color) {
         super(color, 5);
@@ -18,7 +20,9 @@ class Pentagon extends Shape {
     }
     
     /**
+     * {@inheritDoc}
      * 
+     * @return the area of the pentagon
      */
     @Override
     public double getArea() {
@@ -26,9 +30,10 @@ class Pentagon extends Shape {
     }
 
     /**
+     * {@inheritDoc}
      * 
-     * @param t
-     * @param color
+     * @param t 
+     * @param color 
      */
     @Override
     public void setShapeColor(Turtle t, String color) {
@@ -36,8 +41,9 @@ class Pentagon extends Shape {
     }
 
     /**
+     * {@inheritDoc}
      * 
-     * @param t
+     * @param t 
      */
     @Override
     public void draw(Turtle t) {
@@ -50,10 +56,11 @@ class Pentagon extends Shape {
     }
 
     /**
+     * {@inheritDoc}
      * 
-     * @param t
-     * @param x
-     * @param y
+     * @param t 
+     * @param x 
+     * @param y 
      */
     @Override
     public void draw(Turtle t, double x, double y) {
@@ -69,7 +76,9 @@ class Pentagon extends Shape {
     }
 
     /**
+     * {@inheritDoc}
      * 
+     * @return a string that contains the side length, color, and number of sies
      */
     @Override
     public String toString() {
@@ -77,8 +86,10 @@ class Pentagon extends Shape {
     }
 
     /**
+     * {@inheritDoc}
      * 
-     * @param other
+     * @param other 
+     * @return true if this pentagon and the other pentagon are equal, false otherwise
      */
     @Override
     public boolean equals(Object other) {
