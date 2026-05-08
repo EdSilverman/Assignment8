@@ -31,9 +31,6 @@ class Pentagon extends Shape {
 
     /**
      * {@inheritDoc}
-     * 
-     * @param t 
-     * @param color 
      */
     @Override
     public void setShapeColor(Turtle t, String color) {
@@ -42,8 +39,6 @@ class Pentagon extends Shape {
 
     /**
      * {@inheritDoc}
-     * 
-     * @param t 
      */
     @Override
     public void draw(Turtle t) {
@@ -57,10 +52,6 @@ class Pentagon extends Shape {
 
     /**
      * {@inheritDoc}
-     * 
-     * @param t 
-     * @param x 
-     * @param y 
      */
     @Override
     public void draw(Turtle t, double x, double y) {
@@ -88,7 +79,6 @@ class Pentagon extends Shape {
     /**
      * {@inheritDoc}
      * 
-     * @param other 
      * @return true if this pentagon and the other pentagon are equal, false otherwise
      */
     @Override
