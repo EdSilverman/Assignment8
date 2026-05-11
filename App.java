@@ -183,53 +183,51 @@ public class App {
 
                         case "2":
                             System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                            double x2 = scanner.nextDouble();
 
                             System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                            double y2 = scanner.nextDouble();
 
                                 Rectangle rectangle = rectangle(scanner);
 
-                            rectangle.draw(t, x, y);
+                            rectangle.draw(t, x2, y2);
                             break;
 
                         case "3": 
 
                             System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                            double x3 = scanner.nextDouble();
 
                             System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                            double y3 = scanner.nextDouble();
 
                                 Triangle triangle = triangle(scanner);
 
-                            triangle.draw(t, x, y);
+                            triangle.draw(t, x3, y3);
                             break;
 
                         case "4":
 
                             System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                            double x4 = scanner.nextDouble();
 
                             System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                            double y4 = scanner.nextDouble();
 
                                 Pentagon pentagon = pentagon(scanner);
                         
-                            pentagon.draw(t, x, y);
+                            pentagon.draw(t, x4, y4);
                             break;
 
                         case "0":
 
                             System.out.println("Going back to start");
                             continue;
-                            break;
 
                             default:
 
                                 System.out.println("Invalid option please try again");
                                 break;
-
                         }
                     } while (!shapeChoice.equals("0"));
 
