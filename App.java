@@ -99,52 +99,60 @@ public class App {
 
             userChoice = scanner.nextLine();
             
-            
-            if (userChoice.equals("1")){
+            switch (userChoice) {
+                case "1":
 
-                do{
-                    System.out.println("Choose a shape to draw (the number choice");
+                    do{
+                        System.out.println("Choose a shape to draw (the number choice");
 
-                    System.out.println("1. Circle");
-                    System.out.println("2. Rectangle");
-                    System.out.println("3. Triangle");
-                    System.out.println("4. Pentagon");
-                    System.out.println("0. Back");
+                        System.out.println("1. Circle");
+                        System.out.println("2. Rectangle");
+                        System.out.println("3. Triangle");
+                        System.out.println("4. Pentagon");
+                        System.out.println("0. Back");
 
-                    shapeChoice = scanner.nextLine();
+                        shapeChoice = scanner.nextLine();
 
-                    if (shapeChoice.equals("1") ){
-
-                        Circle circle = circle(scanner);
-                        circle.draw(t);
-
-                    } else if(shapeChoice.equals("2")){
-
-                        Rectangle rectangle = rectangle(scanner);
-                        rectangle.draw(t);
-
-                    }else if(shapeChoice.equals("3")){
-
-                        Triangle triangle = triangle(scanner);
-                        triangle.draw(t);
-
-                    }else if(shapeChoice.equals("4")){
-
-                        Pentagon pentagon = pentagon(scanner);
-                        pentagon.draw(t);
-
-                    }else if(shapeChoice.equals("0")){
-
-                        System.out.println("Going back to start");
-                        continue;
-
-                    } else{
-
-                        System.out.println("Invalid option please try again");
+                        switch (shapeChoice) {
                         
-                    }
-                }while(!shapeChoice.equals("0"));
+                            case "1":
+                                Circle circle = circle(scanner);
+                                circle.draw(t);
 
+                                break;
+                            case "2":
+
+                                Rectangle rectangle = rectangle(scanner);
+                                rectangle.draw(t);
+
+                                break;
+                            case "3":
+
+                                Triangle triangle = triangle(scanner);
+                                triangle.draw(t);
+                            
+                                break:
+
+                            case "4":
+
+                                Pentagon pentagon = pentagon(scanner);
+                                pentagon.draw(t);
+
+                                break:
+
+                            case "0":
+
+                                System.out.println("Going back to start");
+                                continue;
+                                
+
+                            default:
+
+                                System.out.println("Invalid option please try again");
+                                break;
+                        }
+                    }while(!shapeChoice.equals("0"));
+                case "2":
             } else if (userChoice.equals("2")){
 
                 do{
