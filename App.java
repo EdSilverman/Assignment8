@@ -53,7 +53,15 @@ public class App {
      * @return the new triangle object
      */
     public static Triangle triangle(Scanner scanner){
+        System.out.printf("Enter a length for the Triangle (a double): ");
+        double length = scanner.nextDouble();
+        scanner.nextLine();
 
+
+        System.out.printf("Enter a color for the Triangle (a string): ");
+        String color = scanner.nextLine();
+
+        return new Triangle(length, color);
     }
 
     /**
@@ -62,7 +70,15 @@ public class App {
      * @return the new pentagon object
      */
     public static Pentagon pentagon(Scanner scanner){
+        System.out.printf("Enter a length for the Pentagon (a double): ");
+        double length = scanner.nextDouble();
+        scanner.nextLine();
 
+
+        System.out.printf("Enter a color for the Pentagon (a string): ");
+        String color = scanner.nextLine();
+
+        return new Pentagon(length, color);
     }
 
 
@@ -106,9 +122,16 @@ public class App {
 
                         Rectangle rectangle = rectangle(scanner);
                         rectangle.draw(t);
+
                     }else if(shapeChoice.equals("3")){
 
+                        Triangle triangle = triangle(scanner);
+                        triangle.draw(t);
+
                     }else if(shapeChoice.equals("4")){
+
+                        Pentagon pentagon = pentagon(scanner);
+                        pentagon.draw(t);
 
                     }else if(shapeChoice.equals("0")){
 
@@ -160,7 +183,27 @@ public class App {
 
                     } else if(shapeChoice.equals("3")){
 
+                        System.out.printf("Enter the x-coordinate (a double)");
+                        double x = scanner.nextDouble();
+
+                        System.out.printf("Enter the y-coordinate (a double)");
+                        double y = scanner.nextDouble();
+
+                        Triangle triangle = triangle(scanner);
+
+                        triangle.draw(t, x, y);
+
                     }else if(shapeChoice.equals("4")){
+
+                        System.out.printf("Enter the x-coordinate (a double)");
+                        double x = scanner.nextDouble();
+
+                        System.out.printf("Enter the y-coordinate (a double)");
+                        double y = scanner.nextDouble();
+
+                        Pentagon pentagon = pentagon(scanner);
+                        
+                        pentagon.draw(t, x, y);
 
                     }else if(shapeChoice.equals("0")){
 
@@ -180,9 +223,6 @@ public class App {
             }else {
                 System.out.println("Invalid option please try again");
             }
-
-
-
 
 
         } while (!userChoice.equals("0"));
