@@ -167,8 +167,8 @@ public class App {
 
                         shapeChoice = scanner.nextLine();
                     
-                        switch (shapeChoice){
-                            case "1":    
+                    switch (shapeChoice){
+                        case 1:    
 
                                 System.out.printf("Enter the x-coordinate (a double)");
                                 double x1 = scanner.nextDouble();
@@ -181,48 +181,49 @@ public class App {
                                 circle.draw(t, x1, y1);
                                 break;
 
-                            case "2":
-                                System.out.printf("Enter the x-coordinate (a double)");
-                                double x2 = scanner.nextDouble();
+                        case 2:
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
 
-                                System.out.printf("Enter the y-coordinate (a double)");
-                                double y2 = scanner.nextDouble();
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
 
                                 Rectangle rectangle = rectangle(scanner);
 
-                                rectangle.draw(t, x2, y2);
-                                break;
+                            rectangle.draw(t, x, y);
+                            break;
 
-                            case "3": 
+                        case 3: 
 
-                                System.out.printf("Enter the x-coordinate (a double)");
-                                double x3 = scanner.nextDouble();
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
 
-                                System.out.printf("Enter the y-coordinate (a double)");
-                                double y3 = scanner.nextDouble();
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
 
                                 Triangle triangle = triangle(scanner);
 
-                                triangle.draw(t, x3, y3);
-                                break;
+                            triangle.draw(t, x, y);
+                            break;
 
-                            case "4":
+                        case 4:
 
-                                System.out.printf("Enter the x-coordinate (a double)");
-                                double x4 = scanner.nextDouble();
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
 
-                                System.out.printf("Enter the y-coordinate (a double)");
-                                double y4 = scanner.nextDouble();
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
 
                                 Pentagon pentagon = pentagon(scanner);
                         
-                                pentagon.draw(t, x4, y4);
-                                break;
+                            pentagon.draw(t, x, y);
+                            break;
 
-                            case "0":
+                        case 0:
 
-                                System.out.println("Going back to start");
-                                continue;
+                            System.out.println("Going back to start");
+                            continue;
+                            break;
 
                             default:
 
