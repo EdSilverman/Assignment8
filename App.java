@@ -131,14 +131,14 @@ public class App {
                                 Triangle triangle = triangle(scanner);
                                 triangle.draw(t);
                             
-                                break:
+                                break;
 
                             case "4":
 
                                 Pentagon pentagon = pentagon(scanner);
                                 pentagon.draw(t);
 
-                                break:
+                                break;
 
                             case "0":
 
@@ -152,92 +152,92 @@ public class App {
                                 break;
                         }
                     }while(!shapeChoice.equals("0"));
+
                 case "2":
-            } else if (userChoice.equals("2")){
+            
 
-                do{
-                    System.out.println("Choose a shape to draw at a specific point (the number choice");
+                    do{
+                        System.out.println("Choose a shape to draw at a specific point (the number choice");
 
-                    System.out.println("1. Circle");
-                    System.out.println("2. Rectangle");
-                    System.out.println("3. Triangle");
-                    System.out.println("4. Pentagon");
-                    System.out.println("0. Back");
+                        System.out.println("1. Circle");
+                        System.out.println("2. Rectangle");
+                        System.out.println("3. Triangle");
+                        System.out.println("4. Pentagon");
+                        System.out.println("0. Back");
 
-                    shapeChoice = scanner.nextLine();
+                        shapeChoice = scanner.nextLine();
                     
-                    switch (shapeChoice){
-                        case 1:    
+                        switch (shapeChoice){
+                            case "1":    
 
-                            System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                                System.out.printf("Enter the x-coordinate (a double)");
+                                double x1 = scanner.nextDouble();
 
-                            System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                                System.out.printf("Enter the y-coordinate (a double)");
+                                double y1 = scanner.nextDouble();
 
-                            Circle circle = circle(scanner);
+                                Circle circle = circle(scanner);
 
-                            circle.draw(t, x, y);
-                            break;
+                                circle.draw(t, x1, y1);
+                                break;
 
-                        case 2:
-                            System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                            case "2":
+                                System.out.printf("Enter the x-coordinate (a double)");
+                                double x2 = scanner.nextDouble();
 
-                            System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                                System.out.printf("Enter the y-coordinate (a double)");
+                                double y2 = scanner.nextDouble();
 
-                            Rectangle rectangle = rectangle(scanner);
+                                Rectangle rectangle = rectangle(scanner);
 
-                            rectangle.draw(t, x, y);
-                            break;
+                                rectangle.draw(t, x2, y2);
+                                break;
 
-                        case 3: 
+                            case "3": 
 
-                            System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                                System.out.printf("Enter the x-coordinate (a double)");
+                                double x3 = scanner.nextDouble();
 
-                            System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                                System.out.printf("Enter the y-coordinate (a double)");
+                                double y3 = scanner.nextDouble();
 
-                            Triangle triangle = triangle(scanner);
+                                Triangle triangle = triangle(scanner);
 
-                            triangle.draw(t, x, y);
-                            break;
+                                triangle.draw(t, x3, y3);
+                                break;
 
-                        case 4:
+                            case "4":
 
-                            System.out.printf("Enter the x-coordinate (a double)");
-                            double x = scanner.nextDouble();
+                                System.out.printf("Enter the x-coordinate (a double)");
+                                double x4 = scanner.nextDouble();
 
-                            System.out.printf("Enter the y-coordinate (a double)");
-                            double y = scanner.nextDouble();
+                                System.out.printf("Enter the y-coordinate (a double)");
+                                double y4 = scanner.nextDouble();
 
-                            Pentagon pentagon = pentagon(scanner);
+                                Pentagon pentagon = pentagon(scanner);
                         
-                            pentagon.draw(t, x, y);
-                            break;
+                                pentagon.draw(t, x4, y4);
+                                break;
 
-                        case 0:
+                            case "0":
 
-                            System.out.println("Going back to start");
-                            continue;
-                            break;
+                                System.out.println("Going back to start");
+                                continue;
 
-                        default:
+                            default:
 
-                        System.out.println("Invalid option please try again");
-                        break;
+                                System.out.println("Invalid option please try again");
+                                break;
 
-                    }
-                } while (!shapeChoice.equals("0"));
+                        }
+                    } while (!shapeChoice.equals("0"));
 
-            } else if (userChoice.equals("0")){
-                System.out.println("Program exiting thank you for using");
+                case "0":
+                    System.out.println("Program exiting thank you for using");
 
-            }else {
-                System.out.println("Invalid option please try again");
-            }
+                default:
+                    System.out.println("Invalid option please try again");
+            }   
 
 
         } while (!userChoice.equals("0"));
