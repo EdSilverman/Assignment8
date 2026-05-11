@@ -1,5 +1,6 @@
 /**
- * Represents
+ * Represents a pentagon using the Turtle class.
+ * The pentagon stores its side length and color, calculates its area, and can draw itself at a given location.
  * 
  * @author Alyssa Sul
  */
@@ -69,7 +70,7 @@ class Pentagon extends Shape {
     /**
      * {@inheritDoc}
      * 
-     * @return a string that contains the side length, color, and number of sies
+     * @return a string that contains the side length, color, and number of sides
      */
     @Override
     public String toString() {
