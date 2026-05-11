@@ -168,7 +168,7 @@ public class App {
                         shapeChoice = scanner.nextLine();
                     
                     switch (shapeChoice){
-                        case 1:    
+                        case "1":    
 
                                 System.out.printf("Enter the x-coordinate (a double)");
                                 double x1 = scanner.nextDouble();
@@ -181,7 +181,7 @@ public class App {
                                 circle.draw(t, x1, y1);
                                 break;
 
-                        case 2:
+                        case "2":
                             System.out.printf("Enter the x-coordinate (a double)");
                             double x = scanner.nextDouble();
 
@@ -193,7 +193,7 @@ public class App {
                             rectangle.draw(t, x, y);
                             break;
 
-                        case 3: 
+                        case "3": 
 
                             System.out.printf("Enter the x-coordinate (a double)");
                             double x = scanner.nextDouble();
@@ -206,7 +206,7 @@ public class App {
                             triangle.draw(t, x, y);
                             break;
 
-                        case 4:
+                        case "4":
 
                             System.out.printf("Enter the x-coordinate (a double)");
                             double x = scanner.nextDouble();
@@ -219,7 +219,7 @@ public class App {
                             pentagon.draw(t, x, y);
                             break;
 
-                        case 0:
+                        case "0":
 
                             System.out.println("Going back to start");
                             continue;
