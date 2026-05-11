@@ -158,61 +158,68 @@ public class App {
 
                     shapeChoice = scanner.nextLine();
                     
-                    if (shapeChoice.equals("1") ){
+                    switch (shapeChoice){
+                        case 1:    
+
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
+
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
+
+                            Circle circle = circle(scanner);
+
+                            circle.draw(t, x, y);
+                            break;
+
+                        case 2:
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
+
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
+
+                            Rectangle rectangle = rectangle(scanner);
+
+                            rectangle.draw(t, x, y);
+                            break;
+
+                        case 3: 
+
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
+
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
+
+                            Triangle triangle = triangle(scanner);
+
+                            triangle.draw(t, x, y);
+                            break;
+
+                        case 4:
+
+                            System.out.printf("Enter the x-coordinate (a double)");
+                            double x = scanner.nextDouble();
+
+                            System.out.printf("Enter the y-coordinate (a double)");
+                            double y = scanner.nextDouble();
+
+                            Pentagon pentagon = pentagon(scanner);
                         
-                        System.out.printf("Enter the x-coordinate (a double)");
-                        double x = scanner.nextDouble();
+                            pentagon.draw(t, x, y);
+                            break;
 
-                        System.out.printf("Enter the y-coordinate (a double)");
-                        double y = scanner.nextDouble();
+                        case 0:
 
-                        Circle circle = circle(scanner);
+                            System.out.println("Going back to start");
+                            continue;
+                            break;
 
-                        circle.draw(t, x, y);
-
-                    } else if(shapeChoice.equals("2")){
-                        System.out.printf("Enter the x-coordinate (a double)");
-                        double x = scanner.nextDouble();
-
-                        System.out.printf("Enter the y-coordinate (a double)");
-                        double y = scanner.nextDouble();
-
-                        Rectangle rectangle = rectangle(scanner);
-
-                        rectangle.draw(t, x, y);
-
-                    } else if(shapeChoice.equals("3")){
-
-                        System.out.printf("Enter the x-coordinate (a double)");
-                        double x = scanner.nextDouble();
-
-                        System.out.printf("Enter the y-coordinate (a double)");
-                        double y = scanner.nextDouble();
-
-                        Triangle triangle = triangle(scanner);
-
-                        triangle.draw(t, x, y);
-
-                    }else if(shapeChoice.equals("4")){
-
-                        System.out.printf("Enter the x-coordinate (a double)");
-                        double x = scanner.nextDouble();
-
-                        System.out.printf("Enter the y-coordinate (a double)");
-                        double y = scanner.nextDouble();
-
-                        Pentagon pentagon = pentagon(scanner);
-                        
-                        pentagon.draw(t, x, y);
-
-                    }else if(shapeChoice.equals("0")){
-
-                        System.out.println("Going back to start");
-                        continue;
-
-                    } else{
+                        default:
 
                         System.out.println("Invalid option please try again");
+                        break;
 
                     }
                 } while (!shapeChoice.equals("0"));
