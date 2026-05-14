@@ -27,8 +27,8 @@ Assignment8  <br>
 ├── Rectangle.java  <br>
 ├── Shape.java  <br>
 ├── Triangle.java  <br>
-└── Turtle.java  <br>
-
+├── Turtle.java  <br>
+└── turtleOutput.png <br>
 
 # Turtle.java
 
