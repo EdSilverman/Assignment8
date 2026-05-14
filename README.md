@@ -81,7 +81,26 @@ The documentation of the Turtle classes, used in this project are in the webpage
 
 # Sample Output
 
+## In Terminal
+```
+Choose one of the options below (the number choice)
+1. Draw a Shape
+2. Draw a shape at a specific point
+0. Exit
+1
+Choose a shape to draw (the number choice
+1. Circle
+2. Rectangle
+3. Triangle
+4. Pentagon
+0. Back
+3
+Enter a length for the Triangle (a double): 30
+Enter a color for the Triangle (a string): blue 
+```
 
+## In Turtle
+![alt text](turtleOutput.png)
 
 # Authors
 
